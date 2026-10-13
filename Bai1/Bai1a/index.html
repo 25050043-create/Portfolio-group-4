@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1a - Web page Restaurant</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- File CSS riêng cho câu a -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom px-4 py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand text-uppercase fw-semibold fs-6 tracking-wide" href="#">RESTAURANT TEMPLATE</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navRestaurant">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navRestaurant">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase small text-light-50" href="#" data-bs-toggle="dropdown">BLOCK DEMOS 1</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Demo 1</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase small text-light-50" href="#" data-bs-toggle="dropdown">BLOCK DEMOS 2</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Demo 2</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase small text-light-50" href="#" data-bs-toggle="dropdown">SITE TEMPLATES 1</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Template 1</a></li></ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase small text-light-50" href="#" data-bs-toggle="dropdown">SITE TEMPLATES 2</a>
+                        <ul class="dropdown-menu"><li><a class="dropdown-item" href="#">Template 2</a></li></ul>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-download btn-sm px-3 py-2 text-uppercase fw-bold">DOWNLOAD NOW!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section class="restaurant-hero py-5 text-white">
+        <div class="container py-4">
+            <!-- Title -->
+            <h1 class="text-center display-4 fw-normal mb-5">Restaurant</h1>
+
+            <div class="row align-items-center g-4">
+                <!-- Left Image -->
+                <div class="col-lg-6">
+                    <div class="img-wrapper shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" alt="Restaurant Pizza" class="img-fluid rounded-1">
+                    </div>
+                </div>
+
+                <!-- Right Action Buttons & Text -->
+                <div class="col-lg-5 ps-lg-5" style="margin-top: 100px;">
+                    <div class="d-flex flex-column align-items-start gap-3 mb-4" style="display: flex;">
+                        <a href="#" class="btn btn-pink px-5 py-3 text-white">New Menu</a>
+                        <a href="#" class="btn btn-outline-terrace px-5 py-3">Terrace</a>
+                    </div>
+                    <p class="description-text" style ="margin-top: 50px;">
+                        The restaurant area allowed to accommodate a banquet hall, and a children hall, where children and their parents can fully enjoy the most interesting animation programs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* Color Palette Bài 1a */
+:root {
+    --bg-header: #212529;
+    --bg-hero: #0e3d48;
+    --btn-download: #17a2b8;
+    --btn-pink: #ff3366;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.bg-dark-custom {
+    background-color: var(--bg-header) !important;
+}
+
+.text-light-50 {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.btn-download {
+    background-color: var(--btn-download);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+.btn-download:hover {
+    background-color: #138496;
+    color: #fff;
+}
+
+/* Hero Section */
+.restaurant-hero {
+    background-color: var(--bg-hero);
+    min-height: calc(100vh - 56px);
+}
+
+.restaurant-hero h1 {
+    font-family: 'Georgia', serif;
+    letter-spacing: 1px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+/* Action Buttons */
+.btn-pink {
+    background-color: var(--btn-pink);
+    border: none;
+    border-radius: 4px;
+    min-width: 140px;
+    font-size: 0.95rem;
+    margin-left: 85px;
+}
+.btn-pink:hover {
+    background-color: #e02855;
+}
+
+.btn-outline-terrace {
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+    border-radius: 4px;
+    min-width: 140px;
+    font-size: 0.95rem;
+    margin-left: 95px;
+}
+.btn-outline-terrace:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Description Text */
+.description-text {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    max-width: 320px;
+}

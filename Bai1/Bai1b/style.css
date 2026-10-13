@@ -1,0 +1,283 @@
+/* Bootstrap 5 is loaded from the CDN in index.html. */
+* { box-sizing: border-box; }
+
+:root {
+  --page-width: 872px;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #111;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.page-wrap {
+  width: min(100%, 941px);
+  margin: 0 auto;
+}
+
+.section-label {
+  margin: 21px 0 24px 50px;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.magazine-page {
+  width: calc(100% - 68px);
+  margin: 0 auto;
+  border: 1px solid #b9c2c4;
+  overflow: hidden;
+  background: #c6c9f3;
+}
+
+.bg-dark-custom {
+    background-color: #777777;
+}
+
+.magazine-page .navbar {
+    min-height: 51px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: "Courier New", monospace;
+}
+
+.magazine-page .navbar-brand {
+    color: #f5f5f5;
+    font-size: 11px;
+    white-space: nowrap;
+    letter-spacing: -0.3px;
+    margin-right: 20px;
+}
+
+.magazine-page .navbar-nav {
+    gap: 10px;
+}
+
+.magazine-page .navbar-nav .nav-link {
+    color: #e8e8e8;
+    font-size: 11px;
+    white-space: nowrap;
+    padding: 8px 0;
+}
+
+.magazine-page .navbar-nav .nav-link:hover,
+.magazine-page .navbar-nav .nav-link:focus {
+    color: #ffffff;
+}
+
+.magazine-page .navbar-nav .dropdown-toggle::after {
+    vertical-align: 3px;
+}
+
+.magazine-page .dropdown-menu {
+    min-width: 150px;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.magazine-page .btn-download {
+    display: inline-block;
+    padding: 9px 20px;
+    border: 0;
+    border-radius: 22px;
+    background-color: #13a4cf;
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.magazine-page .btn-download:hover {
+    background-color: #0d91b8;
+    color: #ffffff;
+}
+
+/* Mobile navbar */
+.magazine-page .navbar-toggler {
+    padding: 4px 8px;
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+.magazine-page .navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 991.98px) {
+    .magazine-page .navbar-brand {
+        white-space: normal;
+        max-width: 75%;
+    }
+
+    .magazine-page .navbar-collapse {
+        padding-top: 12px;
+    }
+
+    .magazine-page .navbar-nav {
+        align-items: stretch !important;
+        gap: 0;
+    }
+
+    .magazine-page .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+
+    .magazine-page .download-item {
+        margin: 10px 0 4px;
+    }
+
+    .magazine-page .btn-download {
+        text-align: center;
+    }
+}
+
+.top-nav {
+  height: 51px;
+  padding: 0 7px 0 4px;
+  background: #777;
+  color: #eee;
+  font-family: "Courier New", monospace;
+  white-space: nowrap;
+  gap: 12px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.top-nav .brand {
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.nav-links {
+  height: 100%;
+  gap: 18px;
+}
+
+.nav-links a { opacity: .95; }
+.nav-links a.muted { color: #aaa; }
+
+.caret {
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: 3px;
+  border-top: 4px solid currentColor;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.download-btn {
+  background: #13a4cf;
+  border-radius: 18px;
+  padding: 10px 22px;
+  box-shadow: inset 0 1px 2px rgba(255,255,255,.2);
+}
+
+.hero {
+  min-height: 308px;
+  background: linear-gradient(110deg, #efb1e8 0%, #d5c6f5 48%, #a7d2f7 100%);
+  padding: 11px 34px 26px;
+}
+
+.hero-image-wrap {
+  padding-right: 0;
+}
+
+.magazines-photo {
+  display: block;
+  width: 100%;
+  max-width: 364px;
+  height: 271px;
+  object-fit: cover;
+}
+
+.hero-copy {
+  padding-left: 54px;
+  align-self: start;
+  padding-top: 12px;
+  color: #111;
+  font-family: "Courier New", monospace;
+}
+
+.hero-copy h2 {
+  font-size: clamp(29px, 4vw, 52px);
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -2px;
+  margin: 0 0 31px;
+  white-space: nowrap;
+}
+
+.hero-copy p {
+  font-size: 19px;
+  line-height: 1.35;
+  margin: 0 0 36px;
+  white-space: nowrap;
+  color: #303044;
+}
+
+.order-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 158px;
+  height: 46px;
+  border: 2px solid #211c31;
+  border-radius: 25px;
+  color: #171426;
+  text-decoration: none;
+  font-size: 12px;
+  background: transparent;
+}
+
+.highlights {
+  height: 177px;
+  background-image: url("road-background.jpg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.highlights h2 {
+  margin: 0 0 -1px;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  font-size: clamp(28px, 5.5vw, 54px);
+  letter-spacing: -1px;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+/* Keep the composition close to the reference on narrower screens. */
+@media (max-width: 760px) {
+  .section-label { margin: 18px 0 18px 5.3%; font-size: 22px; }
+  .magazine-page { width: 92%; }
+  .top-nav { height: auto; min-height: 48px; flex-wrap: wrap; padding: 12px; }
+  .nav-links { gap: 12px; flex-wrap: wrap; }
+  .nav-links a { font-size: 10px; }
+  .hero { padding: 18px; }
+  .hero-image-wrap { display: flex; justify-content: center; }
+  .magazines-photo { height: auto; max-width: 100%; }
+  .hero-copy { padding: 24px 0 8px; }
+  .hero-copy h2 { white-space: normal; margin-bottom: 16px; }
+  .hero-copy p { white-space: normal; font-size: 16px; margin-bottom: 22px; }
+  .highlights { height: 150px; }
+  .highlights h2 { white-space: normal; text-align: center; }
+}
+
+@media (min-width: 761px) {
+  .hero-image-wrap { flex: 0 0 50%; max-width: 50%; }
+  .hero-copy { flex: 0 0 50%; max-width: 50%; }
+}
